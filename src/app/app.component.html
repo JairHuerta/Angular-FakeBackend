@@ -1,0 +1,26 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
+        <a class="nav-item nav-link" routerLink="colors">Colores</a>
+        <a class="nav-item nav-link" (click)="logout()">Cerrar sesión</a>
+    </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container text-center" [ngClass]="{ 'bg-light': user }">
+    <alert></alert>
+    <router-outlet></router-outlet>
+</div>
+
+<div class="container" *ngIf="user">
+    <app-navbarnews [title]="'Buscador noticias'"></app-navbarnews>
+    <app-form (parameterSelected)="searchNews($event)"></app-form>
+    <app-spinner *ngIf="loading == true"></app-spinner>
+    <app-list-news [listnews]="listnews"></app-list-news>
+</div>
+
+
+
+
+<!-- ecd57a25d28943a2abede1f0bee1a866 -->

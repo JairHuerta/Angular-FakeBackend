@@ -1,0 +1,43 @@
+<div class="jumbotron text-center">
+    <div class="overlay"  [style.background-image]="'linear-gradient(' + this.direction +',' + this.color1 + ',' + this.color2 + ')'">
+  
+    </div>
+  
+    <div class="jumbotron-content">
+        <h1 class="display-4 mt-4">Color Picker</h1>
+        <p class="lead">Selecciona los colores que quieres combinar</p>
+  
+
+  
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col col-lg-2">
+                  <div class="form-group">
+                      <input type="text" class="form-control"  [(colorPicker)]="color1"
+                      [cpPresetColors]="['#7B1FA2', '#039BE5', '#FF5252', '#D32F2F', '#283593']"
+                      [cpPosition]="'left'"
+                      [style.background]="color1"
+                      [cpAlphaChannel]="'always'"
+                      [cpOutputFormat]="'hex'"
+                      [value]="color1">
+                  </div>
+              </div>
+  
+              <div class="col col-lg-2">
+                <div class="form-group">
+                    <input type="text" class="form-control"  [(colorPicker)]="color2"
+                      [cpPresetColors]="['#7B1FA2', '#039BE5', '#FF5252', '#D32F2F', '#283593']"
+                      [cpPosition]="'right'"
+                      [style.background]="color2"
+                      [cpAlphaChannel]="'always'"
+                      [cpOutputFormat]="'hex'"
+                      [value]="color2">
+                </div>
+              </div>
+            </div>
+        </div>
+  
+        <hr class="my-4">
+    </div>
+  
+  </div>

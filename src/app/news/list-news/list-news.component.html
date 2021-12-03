@@ -1,0 +1,13 @@
+<div class="row row-cols-1 row-cols-md-2 g-2">
+  <div *ngFor="let item of listnews" class="col">
+    <div class="card">
+      <img class="card-img-top" [src]="item.urlToImage" >
+      <div class="card-body">
+        <span class="badge bg-light mb-1">{{item.source.name}}</span>
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <a [href]="item.url" target="_blank" class="btn btn-warning btn-block">Ver más...</a>
+      </div>
+    </div>
+  </div>
+</div>
