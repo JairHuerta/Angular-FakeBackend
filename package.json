@@ -4,15 +4,15 @@
     "scripts": {
         "heroku-postbuild": "ng build --prod",
         "ng": "ng",
-        "start": "npm start server.js",
+        "start": "node server.js",
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
     "engines": {
-        "node":"16.13.0",
-        "npm":"8.1.0"
+        "node":"12.14.0",
+        "npm":"6.9.0"
     },
     "private": true,
     "dependencies": {
