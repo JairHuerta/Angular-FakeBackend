@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '@angular/cli@latest',
+1 verbose cli   '@amgular/compiler-cli',
+1 verbose cli   '--save-dev'
+1 verbose cli ]
+2 info using npm@6.14.13
+3 info using node@v14.17.3
+4 verbose npm-session 219ef9a3b04bfa01
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/@angular%2fcli 94ms (from cache)
+8 silly pacote tag manifest for @angular/cli@latest fetched in 135ms
+9 http fetch GET 404 https://registry.npmjs.org/@amgular%2fcompiler-cli 349ms
+10 http fetch GET 404 https://registry.npmjs.org/@amgular%2fcompiler-cli 121ms
+11 silly fetchPackageMetaData error for @amgular/compiler-cli@latest 404 Not Found - GET https://registry.npmjs.org/@amgular%2fcompiler-cli - Not found
+12 timing stage:rollbackFailedOptional Completed in 2ms
+13 timing stage:runTopLevelLifecycles Completed in 3465ms
+14 verbose stack Error: 404 Not Found - GET https://registry.npmjs.org/@amgular%2fcompiler-cli - Not found
+14 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-fetch\check-response.js:117:15
+14 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:95:5)
+15 verbose statusCode 404
+16 verbose pkgid @amgular/compiler-cli@latest
+17 verbose cwd c:\angular\angular10login
+18 verbose Windows_NT 10.0.19043
+19 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "@angular/cli@latest" "@amgular/compiler-cli" "--save-dev"
+20 verbose node v14.17.3
+21 verbose npm  v6.14.13
+22 error code E404
+23 error 404 Not Found - GET https://registry.npmjs.org/@amgular%2fcompiler-cli - Not found
+24 error 404
+25 error 404 '@amgular/compiler-cli@latest' is not in the npm registry.
+26 error 404 You should bug the author to publish it (or use the name yourself!)
+27 error 404 Note that you can also install from a
+28 error 404 tarball, folder, http url, or git url.
+29 verbose exit [ 1, true ]
