@@ -1,5 +1,3 @@
-# angular-10-registration-login-example
+# angular-10-login
 
-Angular 10 - User Registration and Login Example
-
-To see a demo and further details go to https://jasonwatmore.com/post/2020/07/18/angular-10-user-registration-and-login-example-tutorial
+Aplicación elaborada en angular, con modulos de consumo de apis, un color-picker, y un login, register y logout con localstorage.
